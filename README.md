@@ -19,10 +19,10 @@ Now you can use the component as a child component:
 where *value* is the **subject line** that you want to test.
 
 ## props
-| Name              | Description                                                         |
-|:-----------------:|:-------------------------------------------------------------------:|
-| `subject`         | The subject line that you need to test. **Required**                |
-| `showDescription` | To display the test description or not. *Optional*  `Default: false`|
+| Name              | Description                                                                                               |
+|:-----------------:|:---------------------------------------------------------------------------------------------------------:|
+| `subject`         | The subject line that you need to test. **Required**                                                      |
+| `showDescription` | To display the test description or not. *Optional*  `Default: false`                                      |
 | `apiDelay`        | To add delay in seconds before calling the api to let user finish typing. *Optional* `Default: 2secs(min)`|
 
 ## Understanding the output
