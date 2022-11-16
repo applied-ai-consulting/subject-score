@@ -5,7 +5,7 @@ import { terser } from 'rollup-plugin-terser';
 import postcss from 'rollup-plugin-postcss';
 
 export default [{
-    input: './src/index.js',
+    input: 'src/lib/index.js',
     output:[
         {
             file:'dist/index.js',
