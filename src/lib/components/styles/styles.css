@@ -1,0 +1,86 @@
+/* Component Styling */
+.wrapper{
+    display: flex;
+    width: 100%;
+}
+
+.display{
+    width: 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-decoration: none;
+}
+
+.display-grade{
+    grid-column-start: 1;
+    grid-column-end: span 1;
+}
+
+.display-score{
+    font-size: 1em;
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-desc{
+    display: flex;
+    font-size: 0.8em;
+    width: auto;
+    align-items: center;
+}
+
+/* Loader Styling */
+.dot-flashing {
+    position: relative;
+    left: 15px;
+    width: 8px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: #cacaca;
+    color: #555555;
+    animation: dotFlashing 1s infinite linear alternate;
+    animation-delay: 0.5s;
+}
+
+.dot-flashing::before, .dot-flashing::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+
+.dot-flashing::before {
+    left: -15px;
+    width: 8px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: #cacaca;
+    color: #555555;
+    animation: dotFlashing 1s infinite alternate;
+    animation-delay: 0s;
+}
+
+.dot-flashing::after {
+    left: 15px;
+    width: 8px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: #cacaca;
+    color: #555555;
+    animation: dotFlashing 1s infinite alternate;
+    animation-delay: 0.8s;
+}
+
+    @keyframes dotFlashing {
+    0% {
+        background-color: #555555;
+    }
+    50%,
+    100% {
+        background-color: #cacaca;
+    }
+}
