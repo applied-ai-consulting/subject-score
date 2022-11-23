@@ -18,16 +18,16 @@ export default [{
         },
     ],
     plugins:[
-        postcss({
-            plugins:[],
-            minimize: true,
-        }),
+        external(),
+        resolve(),
         babel({
             exclude: 'node_modules/**',
             presets: ['@babel/preset-react'],
         }),
-        external(),
-        resolve(),
+        postcss({
+            plugins:[],
+            minimize: true,
+        }),
         terser(),
     ]
 }]
