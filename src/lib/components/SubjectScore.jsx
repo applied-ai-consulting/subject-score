@@ -71,7 +71,6 @@ const SubjectScore = (props) => {
                             strokeWidth={'15'}
                             styles={{
                                 text:{
-                                    fontSize:'50px', dominantBaseline: 'middle',
                                     fill: data.score >= 75 ? '#388E3C' : data.score >= 60 ? '#42A5F5' : data.score >= 40 ? '#F57C00' : data.score >= 20 ? '#AB47BC' : '#D32F2F'
                                 },
                                 path:{
