@@ -96,7 +96,7 @@ const SubjectScore = (props) => {
                 </div>
             ) :
                 <div className="wrapper">
-                    <div className="dot-flashing"></div>
+                    <div className="dot-flashing" data-testid='loader'></div>
                 </div>
         )
     } else if (errorMessage !== '') {
