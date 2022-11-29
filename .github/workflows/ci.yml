@@ -22,8 +22,10 @@ jobs:
           npm test
   eslint:
     runs-on: ubuntu-latest
+      with:
+          eslint-config-path: "./.eslintrc"
     steps:
-    - name: Check For Lint
+    - name: Check For esLint
       run:  npm run lint
 
   vulnerabilities:
