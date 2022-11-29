@@ -1,3 +1,3 @@
-import SubjectScore from './components/SubjectScore';
+import SubjectScore from "./components/SubjectScore";
 
 export {SubjectScore};
