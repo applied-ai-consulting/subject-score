@@ -22,12 +22,11 @@ jobs:
           npm test
   eslint:
       runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v1
-        - uses: stefanoeb/eslint-action@1.0.2
-          with:
-            files: src/lib/
-
+     steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Check esLint
+      run: npm run lint
   vulnerabilities:
     runs-on: ubuntu-latest
     continue-on-error: true
