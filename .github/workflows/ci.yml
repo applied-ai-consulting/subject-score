@@ -20,13 +20,13 @@ jobs:
       run:  |
           npm ci
           npm test
-eslint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: stefanoeb/eslint-action@1.0.2
-        with:
-          files: src/lib/
+  eslint:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v1
+        - uses: stefanoeb/eslint-action@1.0.2
+          with:
+            files: src/lib/
 
   vulnerabilities:
     runs-on: ubuntu-latest
