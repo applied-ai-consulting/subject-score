@@ -21,11 +21,13 @@ jobs:
           npm ci
           npm test
   eslint:
+    runs-on: ubuntu-latest
     steps:
     - name: Check For Lint
       run:  npm run lint
 
   vulnerabilities:
+    runs-on: ubuntu-latest
     continue-on-error: true
     steps:
     - name: vulnerabilities test
