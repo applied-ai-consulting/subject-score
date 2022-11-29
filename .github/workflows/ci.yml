@@ -21,15 +21,16 @@ jobs:
           npm ci
           npm test
   eslint:
-      runs-on: ubuntu-latest
-      steps:
+    runs-on: ubuntu-latest
+    steps:
     - name: Checkout
       uses: actions/checkout@v3
-    - name: Check esLint
+
+    - name: Run Test
       run: npm run lint
-  # vulnerabilities:
-  #   runs-on: ubuntu-latest
-  #   continue-on-error: true
-  #   steps:
-  #   - name: vulnerabilities test
-  #     run:  npm audit --json
+  vulnerabilities:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+    - name: vulnerabilities test
+      run:  npm audit --json
