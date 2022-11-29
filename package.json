@@ -13,9 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/applied-ai-consulting/subject-score.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "subject-score", "react", "email subject line", "subject line"
+  ],
+  "author": "applied-ai-consulting <https://appliedaiconsulting.com/>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/applied-ai-consulting/subject-score/issues"
   },

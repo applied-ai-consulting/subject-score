@@ -1,16 +1,16 @@
-# Package Name
+# subject-score
 An email subject score component, to determine the effectiveness of your subject line with a colorful presentation.
 
 ## Installation
 Install with npm:
 ``` bash
-npm install "Package Name"
+npm install "subject-score"
 ```
 
 ## Usage
 Import the component:
 ```bash
-import {SubjectScore} from 'package name'
+import {SubjectScore} from 'subject-score'
 ```
 Now you can use the component as a child component:
 ```bash
@@ -43,3 +43,4 @@ Scores and Grade are genrated based on the effectiveness of your subject line, a
 | 20 - 39 | D     | $$\textcolor{#AB47BC}{\text{Purple}}$$ |
 | 0 - 19  | D     | $$\textcolor{#D32F2F}{\text{Red}}$$    |
 ## License  
+[MIT](LICENSE.md)
