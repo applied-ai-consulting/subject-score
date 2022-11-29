@@ -20,13 +20,13 @@ jobs:
       run:  |
           npm ci
           npm test
-  eslint:
+eslint:
     runs-on: ubuntu-latest
-    with: 
-      eslint-config-path: "./.eslintrc"
     steps:
-    - name: Check For esLint
-      run:  npm run lint
+      - uses: actions/checkout@v1
+      - uses: stefanoeb/eslint-action@1.0.2
+        with:
+          files: src/lib
 
   vulnerabilities:
     runs-on: ubuntu-latest
