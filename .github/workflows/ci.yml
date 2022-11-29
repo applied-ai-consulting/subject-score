@@ -1,0 +1,32 @@
+name: 'Package CI'
+
+on:
+  push:
+
+jobs:
+  test:
+    run-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Setup node
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16.13.x
+        cache: npm
+
+    - name: Install and Test
+      run:  |
+          npm ci
+          npm test
+  eslint:
+    steps:
+    - name: Check For Lint
+      run:  npm run lint
+
+  vulnerabilities:
+    continue-on-error: true
+    steps:
+    - name: vulnerabilities test
+      run:  npm audit --json
